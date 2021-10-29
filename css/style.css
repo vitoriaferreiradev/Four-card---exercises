@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 98%);
+    text-align: center;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: hsl(234, 12%, 34%);
+}
+
+/* Header */
+
+
+.l-header h1 {
+    font-weight: 200;
+}
+
+.l-header h1 span{
+    font-weight: 600;
+}
+
+.l-header p {
+    margin-bottom: 80px;
+}
+
+.card {
+    max-width: 350px;
+    height: 225px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(170, 170, 170, 0.3);
+    margin: 25px 0;
+    text-align: left;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 4px solid;
+}
+
+.card-img {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: 60px;
+}
+
+.cyan{
+    border-color: hsl(180, 62%, 55%);
+}
+
+.cyan > .card-img{
+    background-image: url("../images/icon-supervisor.svg");
+}
+
+.red{
+    border-color: hsl(0, 78%, 62%);
+}
+
+.red > .card-img{
+    background-image: url("../images/icon-team-builder.svg");
+}
+
+.orange {
+    border-color: hsl(34, 97%, 64%);
+}
+
+.orange > .card-img{
+    background-image: url("../images/icon-karma.svg");
+}
+
+
+.blue {
+    border-color: hsl(212, 86%, 64%);
+}
+
+.blue > .card-img{
+    background-image: url("../images/icon-calculator.svg");
+}
+
+@media screen and (min-width: 320px) {
+
+    body {
+        padding: 0 30px;
+        margin: 80px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .l-header {
+        min-width: 310px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .l-header > p {
+        font-size: .938rem;
+        max-width: 520px;
+        display: inline-block;
+    }
+
+    .l-main .card h2 {
+        font-size: 1.25rem;
+        margin-bottom: 5px;
+    }
+
+    .l-main .card p {
+        font-size: .875rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    body {
+        padding: 0 2%;
+    }
+
+    body, .l-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrap {
+        margin: 0 30px;
+    }
+
+    h1 {
+        font-size: 1.875rem;
+    }
+
+    .l-header > p {
+        font-size: 1rem;
+    }
+
+    .l-main .card h2 {
+        font-size: 1.5rem;
+    }
+}
